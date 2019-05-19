@@ -5,9 +5,9 @@ test("multipleHello", () => {
   expect(multipleHello(3)).toBe('hellohellohello');
 });
 
-test('multipleHello2', () => {
+test('multipleTextByCharacter', () => {
   expect(multipleTextByCharacter('hello', 'l')).toBe('hellohello')
-  expect(multipleTextByCharacter('hellooo', 'o')).toBe('hellooohellooohelooo')
+  expect(multipleTextByCharacter('hellooo', 'o')).toBe('hellooohellooohellooo')
   expect(multipleTextByCharacter('easy', 'e')).toBe('easy')
   expect(multipleTextByCharacter('right', 'x')).toBe('')
 })
