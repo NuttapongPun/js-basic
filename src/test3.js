@@ -8,7 +8,11 @@ function spaceHello(number) {
   const hello = "hello";
   let text = "";
   for (let i = 0; i < hello.length; i++) {
-    text += hello[i] + space;
+    if (i === 0) {
+      text += hello[i];
+    } else {
+      text += space + hello[i];
+    }
   }
   return text;
 }

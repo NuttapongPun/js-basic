@@ -7,10 +7,15 @@ function multipleHello(number) {
 }
 
 function multipleTextByCharacter(text, selectedChar) {
-    /**
-     * count character in given text then multiple the text by that number 
-     */
-    // TODO: Write code here
+  /**
+   * count character in given text then multiple the text by that number 
+   */
+  // TODO: Write code here
+  let txt = "";
+  for (let i = 0; i < (text.match(new RegExp(selectedChar, "g")) || []).length; i++) {
+    txt += text;
+  }
+  return txt;
 }
 
 
